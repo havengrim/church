@@ -43,8 +43,8 @@ const CarouselWithNavbar = () => {
           
 
         </Slider>
-        <div className="absolute top-24 left-0 w-full h-20 bg-red-500 text-white z-10 flex items-center justify-center">
-             
+        <div className="absolute top-24 left-0 w-full h-20  text-white z-10 flex items-center justify-center">
+       
             </div>
       </div>
     </div>
