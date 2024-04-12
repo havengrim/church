@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/logo.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ function Navbar() {
                 <div className="lg:flex lg:items-center lg:justify-between">
                     <div className="flex items-center justify-between">
                         <a href="#">
-                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="" />
+                            <img className="w-auto h-6 sm:h-16" src={logo} alt="" />
                         </a>
 
                         {/* Mobile menu button */}
