@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       grayscale: {
         50: '50%',
+        25: '25%',
       }
     }
   },

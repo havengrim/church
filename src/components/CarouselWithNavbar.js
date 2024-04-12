@@ -1,11 +1,11 @@
 import React from 'react';
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
+import Navbar from './Navbar';
 import Image1 from '../assets/image1.jpg';
 import Image2 from '../assets/image2.jpg';
 import Image3 from '../assets/image3.jpg';
-import Navbar from './Navbar';
 
 const CarouselWithNavbar = () => {
   const images = [
@@ -23,29 +23,30 @@ const CarouselWithNavbar = () => {
     autoplay: true,
     autoplaySpeed: 4000
   };
-  
 
   return (
-    <div className="w-100 overflow-hidden">
-      <div className="relative h-full">
-        <div className="absolute top-0 left-0 w-full  opacity-50 text-white z-10">
-          {/* Transparent Navbar */}
-          <Navbar className="text-white"/>
+    <div className="relative">
+      {/* Transparent Navbar */}
+      <div className="absolute top-0 left-0 w-full  bg-opacity-25 text-white z-10">
+        <Navbar />
+      </div>
+      
+      {/* Slider */}
+      <Slider {...settings} className="overflow-hidden">
+        {images.map((image, index) => (
+          <div key={index}>
+            <img src={image.source} alt={image.alt} className="w-full grayscale-25 brightness-50" />
+            
+          </div>
+        ))}
+      </Slider>
+      
+      {/* Text Container */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 w-full">
+        <div className="container mx-auto px-4">
+        <p className="text-lg md:text-5xl lg:text-8xl  lg:leading-[6.5rem]  leading-2 md:leading-[3rem] font-bold w-full font-montserrat drop-shadow-md">Christ the Living Hope <br />Community Church</p>
+
         </div>
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img src={image.source} alt={image.alt} className="w-full filter grayscale-50" />
-              
-            </div>
-          ))}
-
-          
-
-        </Slider>
-        <div className="absolute top-24 left-0 w-full h-20  text-white z-10 flex items-center justify-center">
-       
-            </div>
       </div>
     </div>
   );
