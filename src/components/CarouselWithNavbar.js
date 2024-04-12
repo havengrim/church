@@ -44,9 +44,7 @@ const CarouselWithNavbar = () => {
 
         </Slider>
         <div className="absolute top-24 left-0 w-full h-20 bg-red-500 text-white z-10 flex items-center justify-center">
-              <div className="container mx-auto px-4 dark:text-black">
-                This is a fixed container below the navbar
-              </div>
+             
             </div>
       </div>
     </div>
