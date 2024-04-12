@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import DarkModeToggle from './components/DarkModeToggle';
 import CarouselWithNavbar from './components/CarouselWithNavbar';
 import Details from './components/Details';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 
 
 function App() {
