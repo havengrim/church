@@ -1,13 +1,18 @@
 
+import { ThemeProvider } from "@/components/theme-provider"
 import './index.css'
+import Home from "@/pages/Home"
+
 
 function App() {
 
 
   return (
-    <>
-     <h4 className='text-red-500'>Hello</h4>
-    </>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="">
+          <Home />
+      </div>
+      </ThemeProvider>
   )
 }
 
