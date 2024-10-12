@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import Devotion from "./Devotion";
+import Mission from "./Mission";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,6 +35,7 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <Devotion />
+      <Mission />
     </div>
   );
 };
