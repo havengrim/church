@@ -11,7 +11,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="py-24">
+    <section className="py-24 dark:bg-gray-800">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="flex justify-center items-center flex-col gap-2">
           <span 
@@ -31,7 +31,7 @@ const AboutUs = () => {
             <img 
               src={images.aboutCover} 
               alt="An image illustrating 'Seek First the Kingdom of God'" 
-              className="sm:h-[40vh] w-full mt-6 object-cover"
+              className="sm:h-[40vh] w-full mt-10 object-cover"
             />
           </div>
 
@@ -55,7 +55,7 @@ const AboutUs = () => {
             className="rounded-full mt-10 border-2 py-5 px-8" 
             variant="outline"
             data-aos="fade-up"
-            data-aos-delay="800"
+            data-aos-delay="600"
           >
             See More
           </Button>
