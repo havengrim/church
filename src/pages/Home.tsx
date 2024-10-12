@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
+import Devotion from "./Devotion";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,6 +33,7 @@ const Home = () => {
       </div>
       <Hero />
       <AboutUs />
+      <Devotion />
     </div>
   );
 };

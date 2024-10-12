@@ -1,34 +1,34 @@
 import { images } from "@/assets/images";
 import { Button } from "@/components/ui/button";
-import { GoArrowRight } from "react-icons/go";
-
 
 const AboutUs = () => {
   return (
     <section className="py-24">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-16">
-          {/* Left Side: Content */}
-          <div>
-            <h3 className="font-bold text-4xl leading-tight text-gray-700">
-              Why Saint Joseph School of Fairview Inc?
-            </h3>
-            <p className="text-lg mt-4 leading-relaxed">
-              We offer a student-centered learning experience that provides a wide range of teaching methods designed to sustain students’ aspirations, interests, and needs. Saint Joseph School of Fairview Inc has also modern and adequate facilities suited for academic studies, research and science, physical activities, extra-curricular programs, socio-civic and religious activities. We also offer Montessori programs for elementary and high school that features the philosophy of holistic development for a child – physical, social, emotional, and cognitive.
-            </p>
-            <Button className="rounded-full mt-4 bg-[#630000] p-4 sm:p-8 text-base sm:text-lg flex items-center justify-center">
-              About Us <GoArrowRight className="ml-2 h-5 w-5 sm:ml-4 sm:h-10 sm:w-6" />
-            </Button>
-          </div>
-
-
-          <div>
-            <img
-              src={images.logo}
-              alt="A representative image for About Us"
-              className="w-full h-auto rounded-lg shadow-md"
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <div className="flex justify-center items-center flex-col gap-2">
+          <span className="uppercase font-semibold text-gray-500">About Church</span>
+          <h3 className="font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-gray-700 text-center">
+            Seek First the Kingdom of God
+          </h3>
+          <div className="w-full relative">
+            <img 
+              src={images.aboutCover} 
+              alt="An image illustrating 'Seek First the Kingdom of God'" 
+              className="sm:h-[40vh] w-full mt-6 object-cover" 
             />
           </div>
+
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-10 mt-6">
+            <p className="font-normal text-base text-gray-600">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt officia hic praesentium deleniti corporis impedit velit sint mollitia! Perferendis, laboriosam quod provident, commodi distinctio maxime nihil adipisci neque dignissimos eius, optio minus quaerat sed iste rerum ex voluptatibus debitis consequuntur?
+            </p>
+            <p className="font-normal text-base text-gray-600">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ratione nisi assumenda excepturi eos reprehenderit eius impedit dolor, veritatis, illum temporibus facilis porro in ipsum quia voluptatem sint eum consequuntur sed perferendis neque amet quam! Consequatur sint accusantium expedita rem.
+            </p>
+          </div>
+          <Button className="rounded-full mt-10 border-2 py-5 px-8" variant="outline">
+            See More
+          </Button>
         </div>
       </div>
     </section>
