@@ -6,6 +6,9 @@ import Devotion from "./Devotion";
 import Mission from "./Mission";
 import Announcements from "./Announcements";
 import Gallery from "./Gallery";
+import { ModeToggle } from "@/components/mode-toggle";
+
+
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -22,8 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
-
+    <div className="relative">
       <div
         className={`top-0 z-50 w-full transition-all duration-5000 ease-in-out ${
           isScrolled
@@ -39,6 +41,8 @@ const Home = () => {
       <Announcements />
       <Gallery />
       <Mission />
+      {/* Add the ModeToggle component here */}
+      <ModeToggle />
     </div>
   );
 };
