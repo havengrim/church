@@ -77,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </ul>
 
           <a href="">
-            <Button className="bg-primary rounded-full sm:block hidden">Enroll Now</Button>
+            <Button className="bg-primary rounded-full sm:block hidden">Join Now</Button>
           </a>
           <div className="md:hidden flex items-center">
             <button aria-label="Menu">

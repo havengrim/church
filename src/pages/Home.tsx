@@ -4,7 +4,8 @@ import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import Devotion from "./Devotion";
 import Mission from "./Mission";
-
+import Announcements from "./Announcements";
+import Gallery from "./Gallery";
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -21,7 +22,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
 
       <div
         className={`top-0 z-50 w-full transition-all duration-5000 ease-in-out ${
@@ -35,6 +36,8 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <Devotion />
+      <Announcements />
+      <Gallery />
       <Mission />
     </div>
   );
