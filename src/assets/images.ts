@@ -6,6 +6,7 @@ import cover4 from './cover-4.jpg'
 import aboutCover from './about-cover.jpg'
 import mission from './mission-cover.jpg'
 import vision from './vision-cover.jpg'
+import logoDark from './logoDark.png'
 
 export const images = {
   logo,
@@ -15,5 +16,6 @@ export const images = {
   cover4,
   aboutCover,
   mission,
-  vision
+  vision,
+  logoDark
 };

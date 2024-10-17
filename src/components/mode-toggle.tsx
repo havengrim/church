@@ -18,8 +18,13 @@ export function ModeToggle() {
   }, [theme]);
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
-      <Button variant="outline" className="rounded-full border-2" size="icon" onClick={toggleTheme}>
+    <div className="fixed bottom-4 right-4 z-[1000] md:bottom-8 md:right-8">
+      <Button
+        variant="outline"
+        className="rounded-full border-2 p-2 md:p-3"
+        size="icon"
+        onClick={toggleTheme}
+      >
         {isDarkMode ? (
           <Sun className="h-[1.2rem] w-[1.2rem] text-white" />
         ) : (

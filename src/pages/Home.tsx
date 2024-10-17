@@ -8,7 +8,6 @@ import Announcements from "./Announcements";
 import Gallery from "./Gallery";
 import { ModeToggle } from "@/components/mode-toggle";
 
-
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,6 +25,7 @@ const Home = () => {
 
   return (
     <div className="relative">
+      {/* Navbar Section */}
       <div
         className={`top-0 z-50 w-full transition-all duration-5000 ease-in-out ${
           isScrolled
@@ -35,13 +35,18 @@ const Home = () => {
       >
         <Navbar />
       </div>
-      <Hero />
-      <AboutUs />
-      <Devotion />
-      <Announcements />
-      <Gallery />
-      <Mission />
-      {/* Add the ModeToggle component here */}
+      
+      {/* Content Wrapper */}
+      <div className="overflow-hidden">
+        <Hero />
+        <AboutUs />
+        <Devotion />
+        <Announcements />
+        <Gallery />
+        <Mission />
+      </div>
+
+      {/* Mode Toggle */}
       <ModeToggle />
     </div>
   );
