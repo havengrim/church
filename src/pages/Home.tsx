@@ -7,6 +7,8 @@ import Mission from "./Mission";
 import Announcements from "./Announcements";
 import Gallery from "./Gallery";
 import { ModeToggle } from "@/components/mode-toggle";
+import Community from "./Community";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,6 +46,8 @@ const Home = () => {
         <Announcements />
         <Gallery />
         <Mission />
+        <Community />
+        <Footer />
       </div>
 
       {/* Mode Toggle */}

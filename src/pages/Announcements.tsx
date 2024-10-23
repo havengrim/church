@@ -31,7 +31,7 @@ const Announcements = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-16 mt-20">
             {/* News Card 1 */}
             <Card
-              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200"
+              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200 border-0 rounded-xl"
               data-aos="fade-up"
             >
               <img
@@ -68,7 +68,7 @@ const Announcements = () => {
 
             {/* News Card 2 */}
             <Card
-              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200"
+              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200 border-0 rounded-xl"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -106,7 +106,7 @@ const Announcements = () => {
 
             {/* News Card 3 */}
             <Card
-              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200"
+              className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200 border-0 rounded-xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
