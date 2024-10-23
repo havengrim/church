@@ -26,11 +26,11 @@ const Community = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Come join our church cell group from the old to the young
+         Join our church cell group from the old to the young
           </h3>
         </div>
 
-        <div className="grid grid-cols-2 py-24 gap-10">
+        <div className="grid sm:grid-cols-2 grid-cols-1 py-24 gap-10">
             <Card
               className="flex flex-col shadow-md hover:shadow-lg transition duration-300 dark:bg-gray-800 dark:text-gray-200 border-0 rounded-xl cursor-pointer"
               data-aos="fade-up"
