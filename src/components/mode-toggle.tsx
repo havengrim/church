@@ -26,9 +26,9 @@ export function ModeToggle() {
         onClick={toggleTheme}
       >
         {isDarkMode ? (
-          <Sun className="h-[1.2rem] w-[1.2rem] text-white" />
+          <Sun className="h-8 w-8 text-white" />
         ) : (
-          <Moon className="h-[1.2rem] w-[1.2rem]" />
+          <Moon className="h-8 w-24" />
         )}
         <span className="sr-only">Toggle theme</span>
       </Button>

@@ -128,7 +128,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </ul>
 
           <a href="">
-            <Button className="bg-primary rounded-full sm:block hidden dark:hover:bg-blue-400 dark:text-gray-200">
+            <Button className="bg-primary rounded-full lg:block hidden dark:hover:bg-blue-400 dark:text-gray-200">
               Join Now
             </Button>
           </a>

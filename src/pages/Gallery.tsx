@@ -5,7 +5,6 @@ import 'swiper/css/pagination';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
-
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Gallery() {
@@ -49,42 +48,45 @@ export default function Gallery() {
           className="mySwiper"
           breakpoints={{
             640: {
-              slidesPerView: 4,
+              slidesPerView: 1,
             },
             768: {
               slidesPerView: 2,
             },
             1024: {
+              slidesPerView: 3,
+            },
+            1280: {
               slidesPerView: 4,
             },
           }}
         >
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=1" alt="Church Event 1" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=1" alt="Church Event 1" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=2" alt="Church Event 2" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=2" alt="Church Event 2" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=3" alt="Church Event 3" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=3" alt="Church Event 3" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=4" alt="Church Event 4" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=4" alt="Church Event 4" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=5" alt="Church Event 5" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=5" alt="Church Event 5" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=6" alt="Church Event 6" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=6" alt="Church Event 6" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=7" alt="Church Event 7" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=7" alt="Church Event 7" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=8" alt="Church Event 8" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=8" alt="Church Event 8" data-aos="zoom-in" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://picsum.photos/400/300?random=9" alt="Church Event 9" data-aos="zoom-in" />
+            <img className="h-[35vh] w-full object-cover" src="https://picsum.photos/800/600?random=9" alt="Church Event 9" data-aos="zoom-in" />
           </SwiperSlide>
         </Swiper>
       </div>

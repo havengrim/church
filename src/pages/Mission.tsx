@@ -39,7 +39,7 @@ const Mission = () => {
             <p className="text-lg mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
               We aim to be a beacon of faith, offering a community where believers can grow spiritually and share the love of Christ with others. Our vision includes nurturing the soul, mind, and body through teachings that focus on personal and collective transformation in Christ.
             </p>
-            <Button className="rounded-full mt-4 bg-primary p-4 sm:p-8 text-base sm:text-lg flex items-center justify-center">
+            <Button className="rounded-full mt-4 bg-primary p-4 sm:p-8 text-base sm:text-lg flex items-center justify-center dark:text-white">
               Learn More <GoArrowRight className="ml-2 h-5 w-5 sm:ml-4 sm:h-10 sm:w-6" />
             </Button>
           </div>
@@ -66,7 +66,7 @@ const Mission = () => {
             <p className="text-lg mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
               Our mission is to bring the Gospel to life by empowering individuals to grow in their faith and serve others. We are committed to spreading the message of love, hope, and redemption, offering support to the community and engaging in missions that glorify God.
             </p>
-            <Button className="rounded-full mt-4 bg-primary p-4 sm:p-8 text-base sm:text-lg flex items-center justify-center">
+            <Button className="rounded-full mt-4 bg-primary p-4 sm:p-8 text-base sm:text-lg flex items-center justify-center dark:text-white">
               Learn More <GoArrowRight className="ml-2 h-5 w-5 sm:ml-4 sm:h-10 sm:w-6" />
             </Button>
           </div>
