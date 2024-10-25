@@ -2,6 +2,15 @@ import { images } from "@/assets/images";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+import {
     NavigationMenu,
     NavigationMenuContent,
     NavigationMenuItem,
@@ -134,9 +143,22 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </a>
 
           <div className="md:hidden flex items-center">
-            <button aria-label="Menu">
-              <FiMenu size={24} className="dark:text-white" />
-            </button>
+            <Sheet>
+              <SheetTrigger>
+                <button aria-label="Menu">
+                  <FiMenu size={24} className="dark:text-white" />
+                </button>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Are you absolutely sure?</SheetTitle>
+                  <SheetDescription>
+                    This action cannot be undone. This will permanently delete your account
+                    and remove your data from our servers.
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
           </div>
         </nav>
       </div>

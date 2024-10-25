@@ -54,7 +54,7 @@ const AnnouncementsMain = () => {
         </div>
       </div>
 
-      <div className="pb-24 dark:bg-gray-900">
+      <div className="pb-24 dark:bg-gray-900 overflow-hidden">
         <div className="container-padding">
           {/* Vision Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-16 mt-20">
