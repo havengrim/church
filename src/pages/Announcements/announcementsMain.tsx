@@ -6,6 +6,7 @@ import { GoArrowRight } from "react-icons/go";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "@/components/Footer";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const AnnouncementsMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,7 +54,7 @@ const AnnouncementsMain = () => {
         </div>
       </div>
 
-      <div className="pb-24">
+      <div className="pb-24 dark:bg-gray-900">
         <div className="container-padding">
           {/* Vision Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-16 mt-20">
@@ -109,6 +110,7 @@ const AnnouncementsMain = () => {
             </div>
             </div>
         </div>
+        <ModeToggle />
       <Footer />
     </section>
   );
