@@ -32,7 +32,7 @@ const InnerNav: React.FC<NavbarProps> = ({ className }) => {
   }, []);
 
   return (
-<div className={`w-full shadow ${className} ${isScrolled ? 'dark:bg-gray-900' : 'dark:bg-transparent'} dark:bg-gray-900`}>
+<div className={`w-full sticky top-0 shadow ${className} ${isScrolled ? 'dark:bg-gray-800' : 'dark:bg-gray-800 '} dark:bg-gray-800`}>
       <div className="container-padding ">
         <nav className="w-full flex justify-between flex-row md:flex-col sm:flex-row lg:flex-row items-center  dark:text-white">
           <div className="flex gap-2 items-center">

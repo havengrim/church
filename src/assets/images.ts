@@ -7,6 +7,10 @@ import aboutCover from './about-cover.jpg'
 import mission from './mission-cover.jpg'
 import vision from './vision-cover.jpg'
 import logoDark from './logoDark.png'
+import happyFace from './happy-face.png'
+import sad from './sad.png'
+import excited from './excited.png'
+import others from './frustrated.png'
 
 export const images = {
   logo,
@@ -17,5 +21,9 @@ export const images = {
   aboutCover,
   mission,
   vision,
-  logoDark
+  logoDark,
+  happyFace,
+  sad,
+  excited,
+  others
 };

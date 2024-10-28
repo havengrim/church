@@ -3,6 +3,8 @@ import './index.css'
 import Home from "@/pages/Home"
 import AnnouncementsMain from "@/pages/Announcements/announcementsMain"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Help from "./pages/Help/Help"
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/announcements" element={<AnnouncementsMain />} />
+            <Route path="/help" element={<Help />} />
           </Routes>
         </div>
       </Router>
